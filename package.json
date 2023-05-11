@@ -1,4 +1,11 @@
 {
+  "name": "the-blokc-activity-2",
+  "description": "for session",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "chai": "^4.3.7",
@@ -10,18 +17,11 @@
     "prettier-plugin-solidity": "^1.1.3",
     "solidity-coverage": "^0.8.2"
   },
-  "name": "the-blokc-activity-2",
-  "description": "1.  Create a simple smart contract either for utilizing cryptocurrency as a payment or NFT for your project. 2.  Make a repository of your activity and share it in your team channels",
-  "version": "1.0.0",
-  "main": "hardhat.config.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "mocha --timeout 5000"
   },
   "keywords": [],
-  "author": "",
+  "author": "Van Vincent Vasquez",
   "license": "ISC",
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.3",
