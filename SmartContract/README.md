@@ -89,3 +89,5 @@ for verification on the block explorer. Waiting for verification result...
 Successfully verified contract PaymentContract on Etherscan.
 https://sepolia.etherscan.io/address/0xb676eE92D2Ee85A18C73B8B35277b6a15d0E43cC#code
 ```
+
+[see our gas report](https://github.com/VanVasquez/the-blokc-activity-2/blob/main/SmartContract/gas-reporter.txt)
