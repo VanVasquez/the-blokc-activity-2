@@ -2,6 +2,8 @@ const { network, ethers } = require('hardhat');
 const { developmentChains } = require('../helper.hardhat.config');
 const verifiy = require('../utils/verifiy');
 
+let PaymentContractAddress;
+
 module.exports = async ({ getNamedAccounts, deployments }) => {
   const { log, deploy } = deployments;
   const { deployer } = await getNamedAccounts();
@@ -16,7 +18,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     log: true,
     waitConfirmations: network.config.blockConfirmations || 1,
   });
-
+  PaymentContractAddress = PaymentContract.address;
   if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
     log('VERIFRING CONTRACT');
     await verifiy(PaymentContract.address, [projectCost]);
@@ -25,3 +27,5 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 };
 
 module.exports.tags = ['all', 'paymentcontracts'];
+
+module.exports.PaymentContractAddress = PaymentContractAddress;

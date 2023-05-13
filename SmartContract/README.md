@@ -9,7 +9,11 @@ Our project is Mediblokc, it is an EHR system that allows healthcare professiona
 
 # PaymentContract
 
-This payment contract will let the Doctor to add a contract with a project cost. so that the non-owner (patient) can payup
+This payment contract will let the Doctor to add a contract with a project cost. so that the non-owner (patient) can payup.
+
+## About the contract
+
+In this contract, it shows some of the basic function that we will be using in our project, including setting price cost, deposit balance, and paying eth. This will be modified on the future so that multiple transactions can be made in 1 contract. this is for testing purpose
 
 ```bash
 $ hh coverage

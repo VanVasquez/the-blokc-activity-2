@@ -52,4 +52,8 @@ contract PaymentContract {
   function getBalance() public view returns (uint256) {
     return balance;
   }
+
+  function checkIfPaid() public view returns (bool) {
+    return isPaid;
+  }
 }
